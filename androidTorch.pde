@@ -28,7 +28,6 @@ void draw()
   background(#212121);
   if (cam.isStarted())
   {
-    // image(cam, 0, 0, displayWidth, (displayHeight/4)*3);
     textAlign(CENTER);
     textSize(displayWidth*0.05);
     text("Tap to turn torch on/off", displayWidth/2, displayHeight/2);
@@ -59,9 +58,4 @@ void mouseReleased()
 void onCameraPreviewEvent()
 {
   cam.read();
-}
-
-void exit()
-{
-  cam.stop();
 }
