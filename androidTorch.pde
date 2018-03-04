@@ -30,7 +30,8 @@ void draw()
   {
     textAlign(CENTER);
     textSize(displayWidth*0.05);
-    text("Tap to turn torch on/off", displayWidth/2, displayHeight/2);
+    text("TORCH", displayWidth/2, (displayHeight/3)*1);
+    text("Tap to turn on/off", displayWidth/2, (displayHeight/3)*2);
   } else {
     cam.start();
   }
